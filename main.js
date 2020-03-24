@@ -1,9 +1,12 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-
-
-
+const triple = function (num){
+return num * 3
+}
+const tripleAll = function (arr){
+ return arr.map(triple)
+}
 
 /********************************
  * OUR CODE HERE - DON'T TOUCH! *
