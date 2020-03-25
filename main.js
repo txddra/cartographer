@@ -8,6 +8,68 @@ const tripleAll = function (arr){
  return arr.map(triple)
 }
 
+const getNegativeValue = function(num){
+  if (num > 0){
+    return num * -1;
+    } else {
+      return num
+    }
+  };
+
+
+  const negativeValues = function(numArr){
+    return numArr.map(getNegativeValue);
+  };
+
+
+  const makeQuestion = function(str){
+    return str + '?'
+  };
+
+  const questionings = function(str){
+    return str.map(makeQuestion)
+  };
+
+  const getInitials = function(name){
+    return name[0] + name[name.indexOf(' ') + 1];
+  }
+
+
+const changeToInitials = function(names){
+  return names.map(getInitials)
+}
+
+const doubleIfEven = function(num){
+  if (num % 2 === 0){
+    return num * 2
+  } else {
+    return num
+  }
+}
+
+const doubleEven = function(nums){
+  return nums.map(doubleIfEven);
+};
+
+const titleCaseNamesHelper = function(name){
+  return name[0].toUpperCase()+ name.substring(1).toLowerCase()
+  }
+
+  const titleCaseNames = function (names){
+    return names.map(titleCaseNamesHelper)
+  }
+
+  const doubleEveryOtherHelper = function(num, i){
+    if (i % 2 === 1){ 
+      return num * 2
+    } else {
+      return num
+    }
+  }
+
+const doubleEveryOther = function(nums){
+  return nums.map(doubleEveryOtherHelper)
+}
 /********************************
  * OUR CODE HERE - DON'T TOUCH! *
  ********************************/
